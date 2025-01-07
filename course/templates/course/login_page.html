@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    {% load static %}
+    <title>Login - CoursEZ</title>
+    <link rel="stylesheet" href="{% static 'course/login.css' %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="top_bar">
+        <div id="title">CoursEZ</div>
+    </div>
+    <div class="login-container">
+        <div class="login-card">
+            <h1>Welcome to CoursEZ</h1>
+            <p>Find the easiest courses at CMU</p>
+            <a href="{% url 'social:begin' 'google-oauth2' %}" class="login-button">
+                <img src="{% static 'course/google-icon.png' %}" alt="Google Icon">
+                Sign in with Google
+            </a>
+        </div>
+    </div>
+</body>
+
+</html>
